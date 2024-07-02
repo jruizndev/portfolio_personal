@@ -307,6 +307,8 @@ header {
   text-align: center;
   width: 450px;
   height: 450px;
+  font-size: 50px;
+  font-weight: 700;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -323,6 +325,8 @@ header {
   text-align: center;
   width: 450px;
   height: 450px;
+  font-size: 50px;
+  font-weight: 700;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -339,6 +343,8 @@ header {
   text-align: center;
   width: 450px;
   height: 450px;
+  font-size: 50px;
+  font-weight: 700;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -355,6 +361,8 @@ header {
   text-align: center;
   width: 450px;
   height: 450px;
+  font-size: 50px;
+  font-weight: 700;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -371,6 +379,8 @@ header {
   text-align: center;
   width: 450px;
   height: 450px;
+  font-size: 50px;
+  font-weight: 700;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -387,6 +397,8 @@ header {
   text-align: center;
   width: 450px;
   height: 450px;
+  font-size: 50px;
+  font-weight: 700;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -399,7 +411,7 @@ header {
   color: rgb(26, 131, 53);
 }
 
-/* //TESTIMONIOS */
+/* //TESTIMONIOS// */
 
 .carousel-container {
   display: flex;
@@ -410,7 +422,7 @@ header {
 }
 
 .carousel-container h2 {
-  color: rgb(9, 48, 18);
+  color: rgb(248, 78, 236);
   display: flex;
   justify-content: center;
   margin-bottom: -75px;
