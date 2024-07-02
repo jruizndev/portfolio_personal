@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font: 20;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(232, 247, 235);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+header {
+  background-color: rgb(248, 78, 236);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.header .logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .logo img {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 100%;
+  color: #3bfb14;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 20%;
+}
+
+.header .nav-links li a:hover {
+  color: #186f07;
+}
+
+.header .btn button {
+  font-size: 90%;
+  font-weight: 600;
+  text-shadow: 20%;
+  color: rgb(26, 131, 53);
+  padding: 9px 25px;
+  background: rgb(232, 247, 235);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+  background-color: aliceblue;
+  color: rgb(9, 48, 18);
+  transform: scale(1.1);
+}
+
+.cabecera {
+  background-image: url(/assets/8851107.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: auto;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.fotocirculo {
+  position: relative;
+  left: 900px;
+  top: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.name {
+  position: relative;
+  bottom: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 250px;
+  color: rgb(9, 48, 18);
+}
+
+.sobremi {
+  background-color: rgb(248, 78, 236);
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #3bfb14;
+  border-radius: 30px;
+}
+
+.seccionSobre {
+  padding: 0 120px;
+  margin: 10px 0;
+  text-align: center;
+  color: rgb(9, 48, 18);
+  font-size: 20px;
+  width: auto;
+}
+
+.proyectos {
+  background-color: rgb(248, 78, 236);
+  width: 185px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #3bfb14;
+  border-radius: 30px;
+}
+
+.seccionproyectos {
+  margin-top: 100px;
+}
+
+.contenedor {
+  width: auto;
+  padding: 0 120px;
+  margin: 10px 0;
+  align-items: center;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.btnp1 button {
+  background-image: url(/assets/fotoproyectos.jpg);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.btnp2 button {
+  background-image: url(/assets/fotoproyectos.jpg);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.btnp3 button {
+  background-image: url(/assets/fotoproyectos.jpg);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.btnp4 button {
+  background-image: url(/assets/fotoproyectos.jpg);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.btnp5 button {
+  background-image: url(/assets/fotoproyectos.jpg);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.btnp6 button {
+  background-image: url(/assets/fotoproyectos.jpg);
+  width: 450px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.proyecto1 {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.proyecto1:hover {
+  filter: brightness(0.7);
+}
+
+.proyecto2 {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.proyecto2:hover {
+  filter: brightness(0.7);
+}
+
+.proyecto3 {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.proyecto3:hover {
+  filter: brightness(0.7);
+}
+
+.proyecto4 {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.proyecto4:hover {
+  filter: brightness(0.7);
+}
+
+.proyecto5 {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.proyecto5:hover {
+  filter: brightness(0.7);
+}
+
+.proyecto6 {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.proyecto6:hover {
+  filter: brightness(0.7);
+}
+
+.proyecto1 p {
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  transition: color 0.3s ease;
+}
+
+.proyecto1 p:hover {
+  color: rgb(26, 131, 53);
+}
+
+.proyecto2 p {
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  transition: color 0.3s ease;
+}
+
+.proyecto2 p:hover {
+  color: rgb(26, 131, 53);
+}
+
+.proyecto3 p {
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  transition: color 0.3s ease;
+}
+
+.proyecto3 p:hover {
+  color: rgb(26, 131, 53);
+}
+
+.proyecto4 p {
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  transition: color 0.3s ease;
+}
+
+.proyecto4 p:hover {
+  color: rgb(26, 131, 53);
+}
+
+.proyecto5 p {
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  transition: color 0.3s ease;
+}
+
+.proyecto5 p:hover {
+  color: rgb(26, 131, 53);
+}
+
+.proyecto6 p {
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  transition: color 0.3s ease;
+}
+
+.proyecto6 p:hover {
+  color: rgb(26, 131, 53);
+}
+
+/* //TESTIMONIOS */
+
+.carousel-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 65vh;
+  padding: 20px;
+}
+
+.carousel-container h2 {
+  color: rgb(9, 48, 18);
+  display: flex;
+  justify-content: center;
+  margin-bottom: -75px;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.carousel {
+  width: 100%;
+  margin-top: 100px; /* Ajusta el margen superior */
+  max-width: 85.5vw; /* Ajusta el ancho máximo al 85.5% del ancho de la ventana */
+  aspect-ratio: 16 / 9; /* Relación de aspecto de 16:9 */
+  margin-left: 7vw;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url(/assets/8851107.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: auto;
+}
+
+.carousel input {
+  display: none;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.carousel-image img {
+  width: calc(
+    100% - 140px
+  ); /* Reduce el ancho total considerando los márgenes laterales */
+  height: calc(100% - 140px); /* Ajusta la altura para el margen superior */
+  object-fit: cover;
+  display: block;
+  border: 5px solid white;
+  border-radius: 10px; /* Mantén el borde redondeado */
+  margin: 100px 70px 40px; /* Márgenes: superior 100px, laterales 70px, inferior 40px */
+  box-shadow: 0.6x 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto dentro de las imágenes */
+.carousel-image .caption {
+  position: absolute;
+  bottom: 0; /* Alinea el texto al borde inferior de la imagen */
+  left: 0;
+  right: 0;
+  width: calc(
+    100% - 140px
+  ); /* Ajusta el ancho del texto al ancho de la imagen con márgenes laterales */
+  margin: 0 70px 40px; /* Márgenes: inferior 40px, laterales 70px */
+  background-color: white; /* Fondo semi-transparente */
+  color: black;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center; /* Centra el texto horizontalmente */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#image1:checked ~ .carousel-images {
+  transform: translateX(0);
+}
+
+#image2:checked ~ .carousel-images {
+  transform: translateX(-50%);
+}
+
+.carousel label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.carousel label.next {
+  right: 10px;
+}
+
+.carousel label.prev {
+  left: 10px;
+}
+
+.contenedorserfor {
+  width: auto;
+  padding: 0 120px;
+  margin: 10px 0;
+  align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+}
+
+.habilidades {
+  background-color: brown;
+  width: 42vw;
+  height: 50vh;
+}
+
+.servicios {
+  background-color: brown;
+  width: 42vw;
+  height: 50vh;
+}
