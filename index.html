@@ -8,34 +8,34 @@
   </head>
   <body>
     <header class="header">
+      <div class="header-container"> 
       <div class="logo">
-        <img
-          src="/assets/logotipo_JR_circulo_blanco-removebg-preview.png"
-          alt="logotipo de pepe"
-        />
+          <img src="/assets/logotipo_JR_circulo_blanco-removebg-preview.png" alt="logotipo de pepe" />
       </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Sobre mí</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Testimonios</a></li>
-        </ul>
-      </nav>
+        <nav class="nav"> 
+          <div class="nav-container">
+          <ul class="nav-links">
+              <li><a href="#">Sobre mí</a></li>
+              <li><a href="#">Proyectos</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Testimonios</a></li>
+          </ul>
       <a href="#" class="btn"><button>Contacto</button></a>
-    </header>
-
-   
-        <section>
-         <div class="cabecera">
-             <div class="fotocirculo" ><img src="/assets/fotocirculo.png" alt="Fotografía Pepe"></div>
-              <div class="name">
-                <h1>Jose Alfonso Ruiz</h1>
-              <div><h2>Desarrollador Web Full Stack</h2></div>
-            </div>
-        </div>
-        </section>
-
+          </div>
+        </nav>
+      </div> 
+  </header>
+<section>
+  <div class="cabecera">
+    <div class="name">
+      <h1>Jose Alfonso Ruiz</h1>
+      <h2>Desarrollador Web Full Stack</h2>
+    </div>
+    <div class="fotocirculo">
+      <img src="/assets/fotocirculo.png" alt="Fotografía Pepe">
+    </div>
+  </div>
+</section>
       <section class="section1">
         <div class="sobremi">
         <h2> SOBRE MÍ</h2>
@@ -69,75 +69,52 @@
           <div class="proyecto6">
             <a href="#" class="btnp1"><button><p>Proyecto 6</p></button></a>
           </div>
-       
         </div>
       </section>
 
-<main>
-  <div class="carousel-container">
-    
-    <div class="carousel">
-        <input type="radio" name="carousel" id="image1" checked>
-        <input type="radio" name="carousel" id="image2">
-        <h2>TESTIMONIOS</h2>
-        <div class="carousel-images">
-            <div class="carousel-image">
-                <img src="/assets/testimoniomambo.jpeg" alt="Imagen 1">
-                <div class="caption">Tas sajsdjasdksdaklsalkdasnñlasdnlñasdlnañ.
-                  asbkdsablkdsbdaskljdabjlkdsabdjskadsjkads.
-                  saldsajsdkljndskaljndklsadsjkadsjlkdasdsa
-                  dsabjkldsabdjnskaldsjnalkdsfndajkldfnjaldas
-                  adanjkldsñnafjdlkngfdsakldsdas
-                </div>
-                <label for="image2" class="next">&rsaquo;</label>
-            </div>
-            <div class="carousel-image">
-                <img src="/assets/IMG_5654.jpg" alt="Imagen 2">
-                <div class="caption">Texto para la imagen 2</div>
-                <label for="image1" class="prev">&lsaquo;</label>
-            </div>
-            </div>
+      <main>
+        <div class="testimonios"><h2> TESTIMONIOS</h2></div>
+          <div class="testimonios-caja">
+          <div class="cuadro">
+            <img src="/assets/medium-shot-programmer-sitting-chair.jpg" alt="foto testimonio">
+            <div class="texto-imagen"> <p>Pepe es un desarrollador front end excepcional, con un talento notable para crear interfaces intuitivas y funcionales.</p><span>
+            Juan Pérez. Gerente de Desarrollo Web Tech Solutions Inc.
+            </span></div>
+          </div>
+          <div class="cuadro">
+            <img src="/assets/confidence-beauty-glowing-technology-city-nights-generated-by-ai.jpg" alt="foto testimonio">
+            <div class="texto-imagen"><p>Pepe ha sido un desarrollador web excepcional, destacando por su habilidad técnica, eficiencia y dedicación. Altamente recomendado.</p><span> Ana Rodríguez 
+              Directora de Proyectos Digitales Innovatech S.A.</span></div>
+          </div>
         </div>
-    </div>
-</div>
-</main>
+      </main>
 
 <section>
     <div class="contenedorserfor">
-      <div class="habilidades">
-        <H2>HABILIDADES</H2>
-      
-
-
-    <div class="creadiseño">
-      <div class="line-principal"></div>
-      <div class="lineas-creadiseño"></div>
-      <div class="textc-creadiseño"><p>Creatividad y diseño 80%</p></div>
-    </div>
-  
-
-        <div class="html">
-          <div class="line-principal"></div>
-          <div class="lineas-html"></div>
-          <div class="textc-html"><p>HTML / CSS 80%</p></div>
+      <div class="contenedor-habilidades">
+        <div class="habilidades-texto">
+          <H2>HABILIDADES</H2>
         </div>
-   
-   
-      <div class="java">
-        <div class="line-principal"></div>
-        <div class="lineas-java"></div>
-        <div class="textc-java"><p>Java Script 60%</p></div>
+             <div class="habilidades">
+            <p><span>HTML</span>75%</p>
+             <div class="progreso" style="--wth: 75%"></div>
+            </div>
+            <div class="habilidades">
+            <p><span>CSS</span>80%</p>
+            <div class="progreso" style="--wth: 80%"></div>
+          </div>
+          <div class="habilidades">
+          <p><span>JavaScript</span>70%</p>
+          <div class="progreso" style="--wth: 70%"></div>
+          </div>
+          <div class="habilidades">
+          <p><span>Creatividad y Diseño</span>85%</p>
+          <div class="progreso" style="--wth: 85%"></div>
+          </div>
       </div>
 
-
-    <div class="ux">
-      <div class="line-principal"></div>
-      <div class="lineas-ux"></div>
-      <div class="textc-ux"><p>UX & UI Design 80%</p></div>
-    </div>
-      </div>
-
-      <div class="servicios">
+    
+      <div class="contenedor-servicios">
         <h2>SERVICIOS</h2>
       <h3>Desarrollo app móvil</h3>
       <h3>Diseño de páginas e-comerced</p></h3>
