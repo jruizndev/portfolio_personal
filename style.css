@@ -14,9 +14,8 @@ body {
   align-items: center;
   width: 100%;
   max-width: 100%;
-  margin: 0;
+  margin: auto;
   padding: 0;
-  overflow-x: hidden;
   background-color: rgb(232, 247, 235);
 }
 
@@ -61,6 +60,21 @@ header {
   align-items: center;
 }
 
+.header .logo img {
+  height: 4.375rem;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
 header .nav-links {
   list-style: none;
   display: flex;
@@ -70,7 +84,7 @@ header .nav-links {
 
 .nav-links li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 
 .nav-links li:hover {
@@ -90,18 +104,17 @@ header .nav-links {
 }
 
 .btn {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .btn button {
-  font-size: 90%;
+  font-size: 0.9rem;
   font-weight: 600;
-  text-shadow: 20%;
   color: rgb(26, 131, 53);
-  padding: 7px 15px;
+  padding: 0.445rem 0.9375rem;
   background: rgb(232, 247, 235);
   border: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -119,6 +132,7 @@ header .nav-links {
   background-repeat: no-repeat;
   height: 500px;
   width: 100%;
+  min-width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,14 +146,15 @@ header .nav-links {
   height: auto;
   width: auto;
   max-width: 30%;
-  overflow: hidden;
+  min-width: auto;
   margin-right: 0;
 }
 
 .fotocirculo img {
   width: 100%;
   height: 100%;
-  display: block;
+  min-width: auto;
+  display: flex;
   object-fit: cover;
 }
 
@@ -147,6 +162,7 @@ header .nav-links {
   flex: 1;
   color: rgb(9, 48, 18);
   max-width: 50%;
+  min-width: auto;
   text-align: left;
 }
 
@@ -171,17 +187,19 @@ section .section1 {
   flex-direction: column;
   align-items: center;
   max-width: 80%;
+  margin: auto;
 }
+
 .sobremi {
   background-color: rgb(248, 78, 236);
-  width: 230px;
-  height: 40px;
+  width: 14.4rem;
+  height: 3.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5% auto 2%; /* 3% margen superior, auto para centrar horizontalmente, 2% margen inferior */
+  margin: 5% auto 2%;
   color: #3bfb14;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 
 .seccionSobre {
@@ -189,11 +207,12 @@ section .section1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
   margin-top: 1%;
-  margin-left: 10%;
   color: rgb(9, 48, 18);
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 80%;
+  margin: auto;
 }
 
 .proyectos {
@@ -203,20 +222,22 @@ section .section1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6% auto 2%;
+  margin: 6% auto 3% auto;
   color: #3bfb14;
   border-radius: 30px;
 }
 
 .seccionproyectos {
+  width: 80%;
+  margin: auto;
   margin-top: 3%;
 }
 
 .contenedor {
-  width: auto;
-  padding: 0 120px;
-  margin: 10px 0;
+  width: 80%;
+  margin: auto;
   align-items: center;
+  justify-content: center;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
@@ -230,8 +251,8 @@ section .section1 {
 .btnp5 button,
 .btnp6 button {
   background-image: url(/assets/fotoproyectos.jpg);
-  width: 100%;
-  height: 450px;
+  width: 425px;
+  height: 425px;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -248,8 +269,9 @@ section .section1 {
 .proyecto5 p,
 .proyecto6 p {
   text-align: center;
-  width: 100%;
-  height: 450px;
+  width: 425px;
+  margin: auto;
+  height: 425px;
   font-size: 50px;
   font-weight: 700;
   overflow: hidden;
@@ -289,24 +311,26 @@ section .section1 {
 
 .testimoniosgrande {
   display: flex;
-  width: 100%;
+  width: 80%;
   align-items: center;
+  margin: auto;
   justify-content: center;
   flex-direction: column;
 }
 
 .contenedor-general {
   display: flex;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
   margin: 6% auto 2%;
 }
 
 .testimonios h2 {
   background-color: rgb(248, 78, 236);
-  width: 120%;
+  width: 115%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,15 +341,16 @@ section .section1 {
 
 .testimonios-caja {
   display: flex;
-  width: 107%;
+  width: 100%;
   justify-content: center;
-  align-items: stretch; /* Asegura que las cajas tengan la misma altura */
-  gap: 6%; /* Espacio entre las cajas */
-  flex-direction: row; /* Asegúrate de que los elementos hijos se alineen horizontalmente */
+  margin-top: 3%;
+  align-items: stretch;
+  gap: 6%;
+  flex-direction: row; /
 }
 
 .cuadro {
-  width: 100%; /* Ajusta el ancho para que las cajas se alineen horizontalmente */
+  width: 100%; 
   background-color: white;
   border: 12px solid #3bfb14;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -338,7 +363,7 @@ section .section1 {
 
 .cuadro img {
   width: 100%;
-  height: 120%;
+  height: 100%;
   border-radius: 5px;
   object-fit: cover;
   display: block;
@@ -361,51 +386,38 @@ section .section1 {
 
 .habilidades-servicios {
   display: flex;
-  width: 107%;
-  height: 20vw;
-  margin-top: 4%;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(248, 78, 236);
-}
-
-.contenedor-general1 {
-  display: flex;
-  width: 112%;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  text-align: start;
-}
-
-.contenedor-general1 .contenedor-habilidades,
-.contenedor-general1 .contenedor-servicios {
-  display: flex;
-  width: 46%; /* Ajusta el ancho para que los dos contenedores se alineen dentro del 80% */
+  width: 80%;
+  margin: auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   text-align: start;
   align-items: center;
-  height: 50%;
+  margin: auto;
 }
 
 .contenedor-habilidades {
-  background: red;
-  position: relative;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-items: flex-start;
+  width: 100%;
 }
 
-.contenedor-servicios {
-  background: red;
-}
-.contenedor-habilidades .habilidades {
-  margin: 20px 0;
+.habilidades-servicios h2 {
+  display: flex;
+  background-color: rgb(248, 78, 236);
+  border-radius: 30px;
+  color: #3bfb14;
+  width: 23%;
+  justify-content: center;
+  padding: 0;
+  margin-top: 6%;
 }
 
 .contenedor-habilidades .habilidades {
   margin: 20px 0;
-  width: 80%;
-  margin-left: 23%; /* Asegura que el contenedor de habilidades ocupe el 100% del ancho disponible */
+  width: 100%;
 }
 
 .contenedor-habilidades .habilidades p {
@@ -416,21 +428,435 @@ section .section1 {
 
 .contenedor-habilidades .habilidades .progreso {
   position: relative;
-  width: 100%; /* Asegura que la barra de progreso ocupe el 100% del ancho disponible */
+  width: 100%;
+  margin: auto;
   height: 10px;
-  background-color: white;
+  background-color: #3bfb14;
   border-radius: 6px;
   overflow: hidden;
-  margin: 3px 0;
-  justify-self: flex-end; /* Justifica la barra de progreso al margen derecho */
+  justify-self: flex-start;
 }
 
 .contenedor-habilidades .habilidades .progreso::before {
   content: "";
   position: absolute;
-  width: var(
-    --wth
-  ); /* Variable para ajustar el ancho de la barra de progreso */
+  width: var(--wth);
   height: 100%;
-  background: #3bfb14;
+  background: #f84eec;
+}
+
+.habilidades p {
+  color: #186f07;
+  font-weight: 200%;
+}
+
+.contacto {
+  background-image: url(/assets/8851107.jpg);
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto auto auto;
+  padding-bottom: 3%;
+}
+
+.general-contacto {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.general-contacto .contenedor-titulo {
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #186f07;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.ayuda {
+  width: 100%;
+  display: flex;
+  margin-top: 3%;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: start;
+}
+
+.general-contacto button {
+  width: 10%;
+  height: 5vh;
+  border-radius: 5px;
+  margin-top: 20px; 
+  border: 2px solid #3bfb14; 
+  background-color: rgb(232, 247, 235); 
+  color: #186f07; 
+  font-size: 16px;
+  cursor: pointer; 
+}
+
+.general-contacto button:hover {
+  background-color: #186f07; 
+  color: white; 
+}
+
+.nombre-email {
+  display: flex;
+  gap: 2%; /
+  margin-bottom: 30px 20px auto auto; 
+}
+
+.nombre-email .nombre,
+.nombre-email .email {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-bottom: 2%;
+}
+
+.ayuda h3 {
+  color: #186f07;
+  font-weight: 400;
+}
+.nombre-email .nombre h3,
+.nombre-email .email h3 {
+  margin: 0 0 0.5rem 0; 
+  color: #186f07;
+  font-weight: 400;
+}
+
+.nombre-email .nombre input,
+.nombre-email .email input,
+.ayuda input[type="text"] {
+  width: 100%; 
+  padding: 10px;
+  background-color: #f0f0f0; 
+  color: #186f07;
+  font-size: 24px; 
+  font-family: "Ubuntu", sans-serif; 
+  border: 1px solid #3bfb14; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+}
+
+.nombre-email .nombre input::placeholder,
+.nombre-email .email input::placeholder,
+.ayuda input[type="text"]::placeholder {
+  color: #186f07; 
+  font-size: 14px; 
+  font-family: "Ubuntu", sans-serif; 
+}
+
+footer {
+  background: #f84eec;
+  width: 100%;
+  padding: 25px 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 80%;
+  margin: auto;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 3vh;
+  color: #3bfb14;
+  font-style: none;
+}
+.copyright a {
+  color: #3bfb14;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  header {
+    padding: 10px 5%;
+    width: 100%;
+  }
+  
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header .logo img {
+    height: 50px;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-links li {
+    padding: 10px 0;
+  }
+  
+  .btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  .cabecera {
+    height: 300px;
+    padding: 10px 5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .fotocirculo {
+    max-width: 50%;
+  }
+  
+  .name {
+    max-width: 100%;
+  }
+  
+  .name h1 {
+    font-size: 6vw;
+  }
+  
+  .name h2 {
+    font-size: 4vw;
+  }
+  
+  section .section1 {
+    max-width: 100%;
+  }
+  
+  .sobremi, .proyectos {
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .seccionSobre, .seccionproyectos {
+    width: 100%;
+  }
+  
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .btnp1 button, .btnp2 button, .btnp3 button, .btnp4 button, .btnp5 button, .btnp6 button {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .proyecto1 p, .proyecto2 p, .proyecto3 p, .proyecto4 p, .proyecto5 p, .proyecto6 p {
+    width: 100%;
+    height: 200px;
+    font-size: 1.5rem;
+  }
+  
+  .testimonios h2 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .testimonios-caja {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cuadro {
+    width: 100%;
+  }
+  
+  .habilidades-servicios {
+    width: 100%;
+  }
+  
+  .habilidades-servicios h2 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .contenedor-habilidades .habilidades p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contacto {
+    padding: 10px 5%;
+  }
+  
+  .general-contacto button {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+  }
+  
+  .nombre-email {
+    flex-direction: column;
+  }
+  
+  .nombre-email .nombre, .nombre-email .email {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    margin:none;
+    padding: 10px 5%;
+  }
+  
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header .logo img {
+    height: 60px;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-links li {
+    padding: 10px 0;
+  }
+  
+  .btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  .cabecera {
+    height: 400px;
+    padding: 10px 5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .fotocirculo {
+    max-width: 40%;
+  }
+  
+  .name {
+    max-width: 100%;
+  }
+  
+  .name h1 {
+    font-size: 5vw;
+  }
+  
+  .name h2 {
+    font-size: 3vw;
+  }
+  
+  section .section1 {
+    max-width: 100%;
+  }
+  
+  .sobremi, .proyectos {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  
+  .seccionSobre, .seccionproyectos {
+    width: 90%;
+  }
+  
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .btnp1 button, .btnp2 button, .btnp3 button, .btnp4 button, .btnp5 button, .btnp6 button {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .proyecto1 p, .proyecto2 p, .proyecto3 p, .proyecto4 p, .proyecto5 p, .proyecto6 p {
+    width: 100%;
+    height: 300px;
+    font-size: 2rem;
+  }
+  
+  .testimonios h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  
+  .testimonios-caja {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cuadro {
+    width: 100%;
+  }
+  
+  .habilidades-servicios {
+    width: 100%;
+  }
+  
+  .habilidades-servicios h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  
+  .contenedor-habilidades .habilidades p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contacto {
+    padding: 10px 5%;
+  }
+  
+  .general-contacto button {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+  }
+  
+  .nombre-email {
+    flex-direction: column;
+  }
+  
+  .nombre-email .nombre, .nombre-email .email {
+    width: 100%;
+  }
 }
