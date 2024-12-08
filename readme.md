@@ -3,9 +3,9 @@
 Bienvenido a mi portfolio personal, donde presento mi trabajo como desarrollador web full stack junior. 🚀
 
 ## 📋 Tabla de Contenidos
-1. [Sobre el Proyecto](#sobre-el-proyecto)  
-2. [Tecnologías Utilizadas](#tecnologías-utilizadas)  
-3. [Estructura del Proyecto](#estructura-del-proyecto)
+1. sobre-el-proyecto  
+2. tecnologías-utilizadas
+3. estructura-del-proyecto
 
 ---
 
