@@ -8,19 +8,14 @@
             content="Jose Alfonso Ruiz - Desarrollador Web Full Stack"
         />
         <title>Jose Alfonso Ruiz - Portfolio</title>
-        <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Font Awesome -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
         />
     </head>
     <body>
@@ -28,14 +23,10 @@
         <header class="header">
             <div class="header__container">
                 <div class="header__logo">
-                    <img
-                        class="header__logo-img"
-                        src="/assets/logotipo_JR_circulo_blanco-removebg-preview.png"
-                        alt="Logo Jose Alfonso Ruiz"
-                    />
+                    <h1>JR</h1>
                 </div>
 
-                <button class="header__menu-btn" aria-label="Menu">
+                <button class="header__menu-btn">
                     <span class="header__menu-line"></span>
                     <span class="header__menu-line"></span>
                     <span class="header__menu-line"></span>
@@ -45,26 +36,22 @@
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
                             <a href="#about" class="header__nav-link">
-                                <i class="fas fa-user"></i>
-                                Sobre mí
+                                <i class="fas fa-user"></i>Sobre mí
                             </a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#projects" class="header__nav-link">
-                                <i class="fas fa-code"></i>
-                                Proyectos
+                                <i class="fas fa-code"></i>Proyectos
                             </a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#education" class="header__nav-link">
-                                <i class="fas fa-graduation-cap"></i>
-                                Formación
+                                <i class="fas fa-graduation-cap"></i>Formación
                             </a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#contact" class="header__nav-link">
-                                <i class="fas fa-envelope"></i>
-                                Contacto
+                                <i class="fas fa-envelope"></i>Contacto
                             </a>
                         </li>
                     </ul>
@@ -73,7 +60,7 @@
         </header>
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="section hero">
             <div class="hero__container">
                 <div class="hero__content">
                     <h1 class="hero__title">Jose Alfonso Ruiz</h1>
@@ -89,44 +76,40 @@
                             href="mailto:jorsqn@gmail.com"
                             class="hero__social-link"
                         >
-                            <i class="fas fa-envelope"></i>
-                            jorsqn@gmail.com
+                            <i class="fas fa-envelope"></i>jorsqn@gmail.com
                         </a>
                         <a
                             href="https://github.com/jruizndev"
                             class="hero__social-link"
                             target="_blank"
                         >
-                            <i class="fab fa-github"></i>
-                            GitHub
+                            <i class="fab fa-github"></i>GitHub
                         </a>
                         <a
                             href="https://linkedin.com/in/josealfonsoruiz"
                             class="hero__social-link"
                             target="_blank"
                         >
-                            <i class="fab fa-linkedin"></i>
-                            LinkedIn
+                            <i class="fab fa-linkedin"></i>LinkedIn
                         </a>
                     </div>
                 </div>
-
                 <div class="hero__image">
                     <img
-                        class="hero__image-photo"
                         src="/assets/Photoroom_20240705_163957-photoaidcom-cropped-2.JPG"
                         alt="Fotografía de Jose Alfonso Ruiz"
+                        class="hero__image-photo"
                     />
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section class="about" id="about">
+        <section id="about" class="section about">
             <div class="about__container">
                 <h2 class="section__title">Sobre mí</h2>
                 <div class="about__content">
-                    <p class="about__text">
+                    <p>
                         Desarrollador Web Full Stack Junior con sólida formación
                         técnica y experiencia en metodologías ágiles. Me
                         especializo en crear soluciones web eficientes y
@@ -136,58 +119,59 @@
                     </p>
 
                     <div class="tech-stack">
-                        <h3 class="tech-stack__title">Stack Tecnológico</h3>
+                        <h3>Stack Tecnológico</h3>
                         <div class="tech-stack__grid">
                             <div class="tech-stack__category">
-                                <h4 class="tech-stack__category-title">
+                                <h4>
                                     <i class="fas fa-laptop-code"></i>
                                     Frontend
                                 </h4>
-                                <ul class="tech-stack__list">
-                                    <li class="tech-stack__item">React</li>
-                                    <li class="tech-stack__item">Vite</li>
-                                    <li class="tech-stack__item">HTML5</li>
-                                    <li class="tech-stack__item">CSS3</li>
-                                    <li class="tech-stack__item">JavaScript</li>
-                                    <li class="tech-stack__item">Tailwind</li>
-                                    <li class="tech-stack__item">Sass</li>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Vite</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Tailwind</li>
+                                    <li>Sass</li>
                                 </ul>
                             </div>
+
                             <div class="tech-stack__category">
-                                <h4 class="tech-stack__category-title">
+                                <h4>
                                     <i class="fas fa-server"></i>
                                     Backend
                                 </h4>
-                                <ul class="tech-stack__list">
-                                    <li class="tech-stack__item">Node.js</li>
-                                    <li class="tech-stack__item">Express</li>
-                                    <li class="tech-stack__item">MySQL</li>
-                                    <li class="tech-stack__item">MongoDB</li>
-                                    <li class="tech-stack__item">Sequelize</li>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                    <li>Sequelize</li>
                                 </ul>
                             </div>
+
                             <div class="tech-stack__category">
-                                <h4 class="tech-stack__category-title">
+                                <h4>
                                     <i class="fas fa-tools"></i>
                                     Testing & DevOps
                                 </h4>
-                                <ul class="tech-stack__list">
-                                    <li class="tech-stack__item">Vitest</li>
-                                    <li class="tech-stack__item">Git</li>
-                                    <li class="tech-stack__item">GitHub</li>
-                                    <li class="tech-stack__item">Postman</li>
+                                <ul>
+                                    <li>Vitest</li>
+                                    <li>Git</li>
+                                    <li>GitHub</li>
+                                    <li>Postman</li>
                                 </ul>
                             </div>
+
                             <div class="tech-stack__category">
-                                <h4 class="tech-stack__category-title">
+                                <h4>
                                     <i class="fas fa-paint-brush"></i>
                                     Diseño
                                 </h4>
-                                <ul class="tech-stack__list">
-                                    <li class="tech-stack__item">Figma</li>
-                                    <li class="tech-stack__item">
-                                        Adobe Premiere
-                                    </li>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Adobe Premiere</li>
                                 </ul>
                             </div>
                         </div>
@@ -197,120 +181,60 @@
         </section>
 
         <!-- Projects Section -->
-        <section class="projects" id="projects">
+        <section id="projects" class="section projects">
             <div class="projects__container">
                 <h2 class="section__title">Proyectos Destacados</h2>
                 <div class="projects__grid">
                     <!-- Rescue Factory -->
                     <article class="project-card">
                         <div class="project-card__content">
-                            <h3 class="project-card__title">Rescue Factory</h3>
-                            <p class="project-card__role">
-                                <i class="fas fa-user-tie"></i>
-                                Product Owner
-                            </p>
-                            <ul class="project-card__features">
-                                <li>
-                                    Desarrollo full stack de plataforma de
-                                    adopción de mascotas
-                                </li>
-                                <li>
-                                    Implementación de sistema de autenticación
-                                </li>
-                                <li>
-                                    Gestión de base de datos MySQL con Sequelize
-                                </li>
-                                <li>Diseño de interfaz con React y Tailwind</li>
-                            </ul>
-                            <div class="project-card__tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Express</span>
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">
+                                    Rescue Factory
+                                </h3>
+                                <p class="project-card__role">
+                                    <i class="fas fa-user-tie"></i>
+                                    Product Owner
+                                </p>
                             </div>
-                            <div class="project-card__links">
-                                <a
-                                    href="https://github.com/a-bac-0/rescue_factory"
-                                    class="button button--outline"
-                                    target="_blank"
-                                >
-                                    <i class="fab fa-github"></i>
-                                    Código
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Back End Museo Memes -->
-                    <article class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">
-                                Back End Museo Memes
-                            </h3>
-                            <p class="project-card__role">
-                                <i class="fas fa-code"></i>
-                                Backend Developer
-                            </p>
-                            <ul class="project-card__features">
-                                <li>
-                                    Desarrollo backend con Node.js y Express
-                                </li>
-                                <li>Implementación de validaciones</li>
-                                <li>Gestión de base de datos MongoDB</li>
-                                <li>Documentación de API con Postman</li>
-                            </ul>
-                            <div class="project-card__tech">
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Express</span>
-                            </div>
-                            <div class="project-card__links">
-                                <a
-                                    href="https://github.com/jruizndev/simpson-meme-api"
-                                    class="button button--outline"
-                                    target="_blank"
-                                >
-                                    <i class="fab fa-github"></i>
-                                    Código
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- NextStep -->
-                    <article class="project-card">
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">NextStep</h3>
-                            <p class="project-card__role">
-                                <i class="fas fa-laptop-code"></i>
-                                Frontend Developer
-                            </p>
-                            <ul class="project-card__features">
-                                <li>
-                                    Desarrollo de chatbot para orientación
-                                    académica
-                                </li>
-                                <li>
-                                    Implementación de interfaz con React y
-                                    Tailwind
-                                </li>
-                                <li>Integración con APIs externas</li>
-                                <li>Proyecto presentado en Hackathon</li>
-                            </ul>
-                            <div class="project-card__tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Tailwind</span>
-                                <span class="tech-tag">Node.js</span>
-                            </div>
-                            <div class="project-card__links">
-                                <a
-                                    href="https://github.com/jfigueira87/NextStep"
-                                    class="button button--outline"
-                                    target="_blank"
-                                >
-                                    <i class="fab fa-github"></i>
-                                    Código
-                                </a>
+                            <img
+                                src="/assets/rescue-factory.png"
+                                alt="Captura de Rescue Factory"
+                                class="project-card__image"
+                            />
+                            <div class="project-card__info">
+                                <ul class="project-card__features">
+                                    <li>
+                                        Desarrollo full stack de plataforma de
+                                        adopción de mascotas
+                                    </li>
+                                    <li>
+                                        Implementación de sistema de
+                                        autenticación
+                                    </li>
+                                    <li>
+                                        Gestión de base de datos MySQL con
+                                        Sequelize
+                                    </li>
+                                    <li>
+                                        Diseño de interfaz con React y Tailwind
+                                    </li>
+                                </ul>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                </div>
+                                <div class="project-card__links">
+                                    <a
+                                        href="https://github.com/a-bac-0/rescue_factory"
+                                        class="button button--outline"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-github"></i>Código
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -318,33 +242,129 @@
                     <!-- MeCatMuseum -->
                     <article class="project-card">
                         <div class="project-card__content">
-                            <h3 class="project-card__title">MeCatMuseum</h3>
-                            <p class="project-card__role">
-                                <i class="fas fa-tasks"></i>
-                                Scrum Master
-                            </p>
-                            <ul class="project-card__features">
-                                <li>Desarrollo de museo virtual de memes</li>
-                                <li>Implementación de CRUD completo</li>
-                                <li>Integración con APIs</li>
-                                <li>
-                                    Gestión del equipo con metodologías ágiles
-                                </li>
-                            </ul>
-                            <div class="project-card__tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">MeCatMuseum</h3>
+                                <p class="project-card__role">
+                                    <i class="fas fa-tasks"></i>
+                                    Scrum Master
+                                </p>
                             </div>
-                            <div class="project-card__links">
-                                <a
-                                    href="https://github.com/jruizndev/memecatmuseum"
-                                    class="button button--outline"
-                                    target="_blank"
-                                >
-                                    <i class="fab fa-github"></i>
-                                    Código
-                                </a>
+                            <img
+                                src="/assets/memecatmuseum.png"
+                                alt="Captura de memecatmuseum"
+                                class="project-card__image"
+                            />
+                            <div class="project-card__info">
+                                <ul class="project-card__features">
+                                    <li>
+                                        Desarrollo de museo virtual de memes
+                                    </li>
+                                    <li>Implementación de CRUD completo</li>
+                                    <li>Integración con APIs</li>
+                                    <li>
+                                        Gestión del equipo con metodologías
+                                        ágiles
+                                    </li>
+                                </ul>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                                <div class="project-card__links">
+                                    <a
+                                        href="https://github.com/jruizndev/memecatmuseum"
+                                        class="button button--outline"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-github"></i>Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NextStep -->
+                    <article class="project-card">
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">NextStep</h3>
+                                <p class="project-card__role">
+                                    <i class="fas fa-laptop-code"></i>
+                                    Frontend Developer
+                                </p>
+                            </div>
+                            <img
+                                src="/assets/next-step.png"
+                                alt="Captura de NextStep"
+                                class="project-card__image"
+                            />
+                            <div class="project-card__info">
+                                <ul class="project-card__features">
+                                    <li>
+                                        Desarrollo de chatbot para orientación
+                                        académica
+                                    </li>
+                                    <li>
+                                        Implementación de interfaz con React y
+                                        Tailwind
+                                    </li>
+                                    <li>Integración con APIs externas</li>
+                                    <li>Proyecto presentado en Hackathon</li>
+                                </ul>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">Node.js</span>
+                                </div>
+                                <div class="project-card__links">
+                                    <a
+                                        href="https://github.com/jfigueira87/NextStep"
+                                        class="button button--outline"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-github"></i>Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Back End Museo Memes -->
+                    <article class="project-card project-card--no-image">
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">
+                                    Back End Museo Memes
+                                </h3>
+                                <p class="project-card__role">
+                                    <i class="fas fa-code"></i>
+                                    Product Owner
+                                </p>
+                            </div>
+                            <div class="project-card__info">
+                                <ul class="project-card__features">
+                                    <li>
+                                        Desarrollo backend con Node.js y Express
+                                    </li>
+                                    <li>Implementación de validaciones</li>
+                                    <li>Gestión de base de datos MongoDB</li>
+                                    <li>Documentación de API con Postman</li>
+                                </ul>
+                                <div class="project-card__tech">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Express</span>
+                                </div>
+                                <div class="project-card__links">
+                                    <a
+                                        href="https://github.com/jruizndev/simpson-meme-api"
+                                        class="button button--outline"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-github"></i>Código
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -353,11 +373,10 @@
         </section>
 
         <!-- Education Section -->
-        <section class="education" id="education">
+        <section id="education" class="section education">
             <div class="education__container">
                 <h2 class="section__title">Formación</h2>
                 <div class="education__timeline">
-                    <!-- F5 Education -->
                     <article class="education__item">
                         <div class="education__header">
                             <h3 class="education__title">
@@ -429,7 +448,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact" id="contact">
+        <section id="contact" class="section contact">
             <div class="contact__container">
                 <h2 class="section__title">Contacto</h2>
                 <div class="contact__content">
@@ -520,6 +539,8 @@
         </footer>
 
         <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
