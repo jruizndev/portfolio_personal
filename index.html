@@ -17,16 +17,19 @@
             href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
             rel="stylesheet"
         />
+        <link rel="icon" href="./assets/fav-icon.png" type="image/x-icon" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
             <div class="header__container">
                 <div class="header__logo">
-                    <h1>JR</h1>
+                    <a href="#">
+                        <h1>JR</h1>
+                    </a>
                 </div>
 
-                <button class="header__menu-btn">
+                <button class="header__menu-btn" aria-label="Menu">
                     <span class="header__menu-line"></span>
                     <span class="header__menu-line"></span>
                     <span class="header__menu-line"></span>
@@ -96,7 +99,7 @@
                 </div>
                 <div class="hero__image">
                     <img
-                        src="/assets/Photoroom_20240705_163957-photoaidcom-cropped-2.JPG"
+                        src="/assets/foto_cv_nueva.jpg"
                         alt="Fotografía de Jose Alfonso Ruiz"
                         class="hero__image-photo"
                     />
@@ -486,41 +489,47 @@
                     </div>
                     <form class="contact__form" id="contactForm">
                         <div class="contact__field">
-                            <label class="contact__label" for="name"
+                            <label for="name" class="contact__label"
                                 >Nombre</label
                             >
                             <input
-                                class="contact__input"
                                 type="text"
                                 id="name"
                                 name="name"
+                                class="contact__input"
                                 required
                             />
                         </div>
+
                         <div class="contact__field">
-                            <label class="contact__label" for="email"
+                            <label for="email" class="contact__label"
                                 >Email</label
                             >
                             <input
-                                class="contact__input"
                                 type="email"
                                 id="email"
                                 name="email"
+                                class="contact__input"
                                 required
                             />
                         </div>
+
                         <div class="contact__field">
-                            <label class="contact__label" for="message"
+                            <label for="message" class="contact__label"
                                 >Mensaje</label
                             >
                             <textarea
-                                class="contact__textarea"
                                 id="message"
                                 name="message"
+                                class="contact__textarea"
                                 required
                             ></textarea>
                         </div>
-                        <button class="button button--primary" type="submit">
+                        <button
+                            id="send-btn"
+                            class="button button--primary"
+                            type="submit"
+                        >
                             <i class="fas fa-paper-plane"></i>
                             Enviar mensaje
                         </button>
@@ -532,9 +541,7 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer__container">
-                <p class="footer__copyright">
-                    © 2024 Jose Alfonso Ruiz - Desarrollador Web Full Stack
-                </p>
+                <p class="footer__copyright">© 2024 Jose Alfonso Ruiz</p>
             </div>
         </footer>
 
