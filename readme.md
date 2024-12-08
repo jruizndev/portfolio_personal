@@ -1,6 +1,6 @@
 # 🌟 Mi Portfolio Personal 🌟
 
-Bienvenido a mi portfolio personal, donde presento mi trabajo como desarrollador web full stack junior basado en Madrid, España. 🚀
+Bienvenido a mi portfolio personal, donde presento mi trabajo como desarrollador web full stack junior. 🚀
 
 ## 📋 Tabla de Contenidos
 1. [Sobre el Proyecto](#sobre-el-proyecto)  
